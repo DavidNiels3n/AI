@@ -1,7 +1,67 @@
 .app-container {
   display: grid;
-  grid-template-rows: 1fr 1fr; /* Two equal-height rows */
-  grid-template-columns: 1fr 1fr 1fr; /* Three equal-width columns */
-  gap: 10px; /* Optional spacing between components */
-  padding: 10px;
+  grid-template-rows: auto 1fr;
+  grid-template-columns: 1fr; 
+  gap: 20px; 
+  padding: 20px;
+  background-color: #96a397; 
+  height: 100vh; 
+  justify-items: center;
+}
+
+h1 {
+  grid-row: 1;
+  margin: 0;
+  margin-top: 50px;
+  text-align: center;
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+table {
+  grid-row: 2;
+  border-spacing: 20px;
+  margin: 0;
+  align-self: start;
+}
+
+.image-recognizer-container {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center; 
+  text-align: center;
+  gap: 10px; 
+}
+
+.image-recognizer-container h5 {
+  font-size: 18px;
+}
+
+
+.image-recognizer-container img {
+  margin-bottom: 0px; 
+}
+
+.image-recognizer-container button {
+  margin-top: 0px; 
+  padding: 10px 70px; 
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 5px;
+}
+
+.image-recognizer-container button:hover {
+  background-color: #bfcfbd;
+}
+
+.image-recognizer-container input {
+  margin-top: 0px; 
+  padding: 5px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 215px;
 }
